@@ -1,0 +1,59 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #1c1c1c;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin: 0;
+  }
+  
+  h1 {
+    color: #e74c3c;
+    font-size: 2.5em;
+  }
+  
+  input, button {
+    padding: 10px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  input {
+    width: 250px;
+  }
+  
+  button {
+    background-color: #e67e22;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #d35400;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin: 5px 0;
+    background-color: #333;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  
+  img {
+    border-radius: 10px;
+    margin-top: 10px;
+    width: 200px;
+  }
+  
+  #infoFilme {
+    margin-top: 20px;
+  }
+  

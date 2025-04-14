@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>🎬 Fila do Cinema</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🎬 Fila do Cinema</h1>
+
+  <section class="controle">
+    <input type="text" id="nomePessoa" placeholder="Digite o nome da pessoa">
+    <button onclick="adicionarPessoa()">Adicionar à Fila</button>
+    <button onclick="gerarPessoa()">Gerar Pessoa Aleatória</button>
+    <button onclick="entrarSessao()">Entrar na Sessão</button>
+  </section>
+
+  <section>
+    <h2>🎟️ Fila Atual</h2>
+    <ul id="fila"></ul>
+  </section>
+
+  <section>
+    <h2>🍿 Sessões Assistidas</h2>
+    <ul id="assistidos"></ul>
+  </section>
+
+  <section id="infoFilme">
+    <!-- Informações do filme serão exibidas aqui -->
+  </section>
+
+  <footer style="margin-top: 50px;">
+    <p>Projeto de Estrutura de Dados com Fila | Polo São Mateus</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
