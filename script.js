@@ -12,7 +12,6 @@ const generoEmoji = {
   romance: "❤️"
 };
 
-// Termos confiáveis por gênero
 const termosDeBusca = {
   action: "Avengers",
   comedy: "Friends",
@@ -29,12 +28,14 @@ function adicionarPessoa() {
   }
   fila.push(nome);
   document.getElementById("nomePessoa").value = "";
+  tocarSomClique(); 
   atualizarFila();
 }
 
 function gerarPessoa() {
   const nomeGerado = `Pessoa ${contadorAleatorio++}`;
   fila.push(nomeGerado);
+  tocarSomClique(); 
   atualizarFila();
 }
 
@@ -50,6 +51,7 @@ async function entrarSessao() {
   }
 
   const pessoa = fila.shift();
+  tocarSomClique(); 
   atualizarFila();
 
   const genero = generos[Math.floor(Math.random() * generos.length)];
@@ -87,7 +89,6 @@ function mostrarFilme(pessoa, filme, genero) {
 
   assistidos.push(`${pessoa} assistiu "${filme.Title}" às ${horario} (${genero})`);
   atualizarAssistidos();
-  tocarSomCinema();
 }
 
 function atualizarAssistidos() {
@@ -103,7 +104,8 @@ function exibirCarregando(pessoa, genero) {
   `;
 }
 
-function tocarSomCinema() {
-  const audio = new Audio("https://www.soundjay.com/button/sounds/button-16.mp3");
-  audio.play();
+function tocarSomClique() {
+  const som = new Audio("https://www.fesliyanstudios.com/play-mp3/6677"); // Som de clique suave
+  som.volume = 0.4;
+  som.play();
 }
